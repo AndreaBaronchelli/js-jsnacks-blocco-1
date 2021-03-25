@@ -82,13 +82,14 @@ var array1 = [1, 2, 3, 4, 5];
 var array2 = [1, 2];
 
 if(array1.length > array2.length) {
-    while(array1.length < array2.length) {
+    while(array1.length > array2.length) {
         array2.push( Math.floor(Math.random() * 10) );
     }
 } else {
-    while(array1.length > array2.length) {
+    while(array1.length < array2.length) {
         array1.push( Math.floor(Math.random() * 10) );
     }
 }
 
 console.log(array1, array2);
+
